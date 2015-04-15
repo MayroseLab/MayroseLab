@@ -3,8 +3,8 @@ library(diversitree)
 library(lawstat)
 
 chi_two_traits <- function(st.s1, st.s2, phy){
-  phy$edge.length =  phy$edge.length/sum(phy$edge.length)
-  my_lenght_chi = matrix (c(0, 0, 0,0), nrow=2)
+  phy$edge.length =  phy$edge.length/sum(phy$edge.length)	# scale tree so that total tree length is 1
+  my_lenght_chi = matrix (c(0, 0, 0,0), nrow=2)	# create 2X2 matrix of 0s
   for (i in 1:length(st.s2$history)) #for each branch
   {
     branch_len=phy$edge.length[i]
