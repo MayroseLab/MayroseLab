@@ -14,7 +14,7 @@
 **Cool qstat aliases from Shiran:**
 * To see the full description your running jobs: alias qzstat 'qstat -s r -xml | tr '"'"'\n'"'"' '"'"' '"'"' | sed '"'"'s#<job_list[^>]*>#\n#g'"'"' | sed '"'"'s#<[^>]*>##g'"'"' | grep " " | column -t'
 * To see the full description all your jobs: alias qwstat 'qstat -xml | tr '"'"'\n'"'"' '"'"' '"'"' | sed '"'"'s#<job_list[^>]*>#\n#g'"'"' | sed '"'"'s#<[^>]*>##g'"'"' | grep " " | column -t'
-* To delete all yuor pending jobs (in status qw or Eqw): alias qwdel 'qstat -s p | awk '"'"'{cmd="qdel " $1; system(cmd); close(cmd)}\'"'"''
+* To delete all yorr pending jobs (in status qw or Eqw): alias qwdel 'qstat -s p | awk '"'"'{cmd="qdel " $1; system(cmd); close(cmd)}\'"'"''
 
 <br/><br/>
 
