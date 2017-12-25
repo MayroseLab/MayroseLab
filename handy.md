@@ -42,4 +42,20 @@
 **In Lecs2:**
 * compute-4-20 to 4-29
 
+<br/><br/>
+
+**Working with power:**
+------
+
+**Address:** power8.tau.ac.il
+
+**Please note: users that at some point during they're studies had a user created for them under computer science directory must request Danny to change their defalut directory in power. The password must be reset as well.**
+
+**Syntax to submit a job:** qsub -q kerenh \<job_file_path\>
+
+**To check which modules are available:** modules avail
+
+**Tips from Danny:**
+* Use intel's compilers instead of gcc and use their impi instead of OPENMPI (more effective)
+
 
