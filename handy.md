@@ -55,7 +55,8 @@
 
 **To check which modules are available:** modules avail
 
-**Tips from Danny:**
+**Tips from HPC team:**
 * Use intel's compilers instead of gcc and use their impi instead of OPENMPI (more effective)
+* The default shell script language in power8 is bash, so in order to set environment vairables, use ```export <VAR_NAME>=<VAR_VALUE>``` (bash compatible) instead of ```setenv <VAR_NAME> <VAR_VALUE>``` (csh / tcsh compatible)
 
 
