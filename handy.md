@@ -53,6 +53,47 @@
 
 **Syntax to submit a job:** qsub -q kerenh \<job_file_path\>
 
+**Job syntax: bash. Example:**
+```
+#!/bin/bash
+
+#PBS -S /bin/bash
+#PBS -j oe
+#PBS -r y
+#PBS -q kerenh
+#PBS -v PBS_O_SHELL=bash,PBS_ENVIRONMENT=PBS_BATCH
+#PBS -N trait_relax_avg_history_brent
+#PBS -e /scratch300/halabikeren/jobs_output/$JOB_NAME.$JOB_ID.ER
+#PBS -o /scratch300/halabikeren/jobs_output/$JOB_NAME.$JOB_ID.OU
+#PBS -l select=ncpus=1:mem=4gb 
+<commands>
+```
+
+
+**How to enter cluster interactive mode (equivalent to ssh-compute in jekyl or lecs2):** qsub clustInteractive.sh
+Where clustInteractive.sh consists of:
+
+```##############################################################
+# Interactive Job Script 0.2
+#
+# This gives you a command prompt running in the kerenh queue.
+# Resources:
+# - Bash shell
+# - 4 GB RAM
+# - 1 CPU core
+#####################################
+#!/bin/bash
+#PBS -S /bin/bash
+#PBS -q kerenh
+#PBS -N clustInteractive
+#PBS -l select=ncpus=1:mem=4gb
+#PBS -I
+```
+
+
+
+
+
 **To check which modules are available:** modules avail
 
 **Tips from HPC team:**
