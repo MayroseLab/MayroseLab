@@ -50,21 +50,21 @@
 **Address:** power8.tau.ac.il
 
 **Our nodes:**
-compute-0-20 
-compute-0-21 
-compute-0-22 
-compute-0-160 
-compute-0-161 
-compute-0-159 
-compute-0-162 
-compute-0-13 
-compute-0-14 
-compute-0-15 
-compute-0-69 
-compute-0-68 
-compute-0-67 
-compute-0-70 
-compute-0-71
+* compute-0-20 
+* compute-0-21 
+* compute-0-22 
+* compute-0-160 
+* compute-0-161 
+* compute-0-159 
+* compute-0-162 
+* compute-0-13 
+* compute-0-14 
+* compute-0-15 
+* compute-0-69 
+* compute-0-68 
+* compute-0-67 
+* compute-0-70 
+* compute-0-71
 
 **Please note: users that at some point during they're studies had a user created for them under computer science directory must request Danny to change their defalut directory in power. The password must be reset as well.**
 
