@@ -44,7 +44,7 @@
 
 <br/><br/>
 
-**Working with power:**
+**Working with power8:**
 ------
 
 **Address:** power8.tau.ac.il
