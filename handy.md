@@ -49,6 +49,23 @@
 
 **Address:** power8.tau.ac.il
 
+**Our nodes:**
+compute-0-20 
+compute-0-21 
+compute-0-22 
+compute-0-160 
+compute-0-161 
+compute-0-159 
+compute-0-162 
+compute-0-13 
+compute-0-14 
+compute-0-15 
+compute-0-69 
+compute-0-68 
+compute-0-67 
+compute-0-70 
+compute-0-71
+
 **Please note: users that at some point during they're studies had a user created for them under computer science directory must request Danny to change their defalut directory in power. The password must be reset as well.**
 
 **Syntax to submit a job:** qsub -q kerenh \<job_file_path\>
@@ -63,16 +80,31 @@
 #PBS -q kerenh
 #PBS -v PBS_O_SHELL=bash,PBS_ENVIRONMENT=PBS_BATCH
 #PBS -N trait_relax_avg_history_brent
-#PBS -e /scratch300/halabikeren/jobs_output/$JOB_NAME.$JOB_ID.ER
-#PBS -o /scratch300/halabikeren/jobs_output/$JOB_NAME.$JOB_ID.OU
+#PBS -e /scratch300/halabikeren/jobs_output/
+#PBS -o /scratch300/halabikeren/jobs_output/
 #PBS -l select=ncpus=1:mem=4gb 
 <commands>
 ```
+Unfotunately, the HPC team didn't manage to find a way to name the log files of the job and also redirect them to a designated directory. So, currently you have two options:
 
+Either name the log files, but have them created in the directory from which the jobs where submitted. Do this by using:
+```
+#PBS -e /scratch300/halabikeren/jobs_output/$JOB_NAME.$JOB_ID.ER
+#PBS -o /scratch300/halabikeren/jobs_output/$JOB_NAME.$JOB_ID.OU
+```
+Or name the log files by the ID of the job, and have them created in your designated directory. Do this by using:
+```
+#PBS -e /scratch300/halabikeren/jobs_output/
+#PBS -o /scratch300/halabikeren/jobs_output/
+```
+I will update you as soon as there is a better solution.
 
-**How to enter cluster interactive mode (equivalent to ssh-compute in jekyl or lecs2):** qsub clustInteractive.sh
+**How to enter cluster interactive mode:** Here, you have two options:
+The reccomended one (According to Adi's team): enter by submitting a job to cluster interative mode: 
+```
+qsub clustInteractive.sh
+```
 Where clustInteractive.sh consists of:
-
 ```##############################################################
 # Interactive Job Script 0.2
 #
@@ -89,10 +121,13 @@ Where clustInteractive.sh consists of:
 #PBS -l select=ncpus=1:mem=4gb
 #PBS -I
 ```
+The not recommended option (as we have done so far): 
+```
+ssh compute-0-20
+```
+This option is not recommended because it "steals" CPUs from the queue withour being monitored by its system.
 
-
-
-
+**Aliases:** Unoftunately, the basic queue commands (qstat, qdel, ect.) in power8 are built differently from the ones in Jekyl and Lecs. Thus, Shiran's lovely aliases for your .chrc file in Jekyl (which should correspond to the .bashrc file in power8) canot use most of them. Also, Haim's famous q.pl script must be copied from Jekyl to power8 in order to be able to use it (with the "q" command). I will update you as soon as I have a set of recommended aliases.
 
 **To check which modules are available:** modules avail
 
