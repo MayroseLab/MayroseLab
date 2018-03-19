@@ -143,7 +143,7 @@ The not recommended option (as we have done so far):
 ```
 ssh compute-0-20
 ```
-This option is not recommended because it "steals" CPUs from the queue withour being monitored by its system.
+This option is not recommended because it "steals" CPUs from the queue without being monitored by its system.
 
 **Aliases:** Unoftunately, the basic queue commands (qstat, qdel, ect.) in power8 are built differently from the ones in Jekyl and Lecs. Thus, Shiran's lovely aliases for your .chrc file in Jekyl (which should correspond to the .bashrc file in power8) canot use most of them. Also, Haim's famous q.pl script must be copied from Jekyl to power8 in order to be able to use it (with the "q" command). I will update you as soon as I have a set of recommended aliases.
 
