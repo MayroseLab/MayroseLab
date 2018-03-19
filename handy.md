@@ -126,16 +126,16 @@ This option is better, due to a number of reasons:
 * Unlike the direct connection to a node, the session is not terminated when the connection is interrupted. This is ahuge advantage, because say you run a script that submits jobs in bulk, and then repeatedly check which are done - you no longer need to keep the connection alive to assure that the script finishes its task. If the connection to the cluster is interrupted (because you went home / went to class or any other reason), you can revive the screen of the session. This is done by simply executing the command ```screen``` as soon as the session begins and before interrupting the connection, execute ```ctrl +a```. Dvory also provided addional information on how to utilize this approach:
 
 Please see screen main useful commands below:
-> screen                                          # to create a screen in a machine
-> ctl +a, d                                       # to detach a screen – go out from a screen – but make it resumeable
-> screen –ls                                      # to see all the screens and their IDs
-> screen –r <id>                                  # to attach a screen
-> ctl+A ?                                         # shows all options in the screen
-> clt+A, x                                        # lock the screen for user
-> ctl+a, k                                        # kill the screen
-> ctl+a, <tab>                                    # resume to last screen
-> screen –L                                       # Make terminal logging : to write to a file all the corresponding in the terminal of that screen
-> screen -X -S <sessionid> kill                   # kill the screen outside
+* screen                                          # to create a screen in a machine
+* ctl +a, d                                       # to detach a screen – go out from a screen – but make it resumeable
+* screen –ls                                      # to see all the screens and their IDs
+* screen –r <id>                                  # to attach a screen
+* ctl+A ?                                         # shows all options in the screen
+* clt+A, x                                        # lock the screen for user
+* ctl+a, k                                        # kill the screen
+* ctl+a, <tab>                                    # resume to last screen
+* screen –L                                       # Make terminal logging : to write to a file all the corresponding in the terminal of that screen
+* screen -X -S <sessionid> kill                   # kill the screen outside
 Also, If you press the arrow down key stroke, you may tell whether you are on a screen or not (if the display blinks – then you are in a screen)
 
 
