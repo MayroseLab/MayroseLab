@@ -66,6 +66,8 @@
 * compute-0-70 
 * compute-0-71
 
+Overall, all the nodes have 172 cores. However, in some nodes, there is only 31GB, so when allocating each job 4GB, for example, then not all the cores could be utilized as the same time.
+
 **Please note: users that at some point during they're studies had a user created for them under computer science directory must request Danny to change their defalut directory in power. The password must be reset as well.**
 
 **Syntax to submit a job:** qsub -q kerenh \<job_file_path\>
