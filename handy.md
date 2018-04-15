@@ -36,8 +36,8 @@
 ------
 
 **In Jekyl:**
-* compute-7-0 to 7-11  (7.0,7.1,7.4 -  64G RAM)
-* compute-8-10 to 8-14 (8.11 - 129G RAM)
+* compute-7-0 to 7-11  (64G RAM each)
+* compute-8-10 to 8-14 (129G RAM each)
 
 **In Lecs2:**
 * compute-4-20 to 4-29
