@@ -36,8 +36,8 @@
 ------
 
 **In Jekyl:**
-* compute-7-0 to 7-11
-* compute-8-10 to 8-14
+* compute-7-0 to 7-11  (7.0,7.1,7.4 -  64G RAM)
+* compute-8-10 to 8-14 (8.11 - 129G RAM)
 
 **In Lecs2:**
 * compute-4-20 to 4-29
@@ -50,21 +50,21 @@
 **Address:** power8.tau.ac.il
 
 **Our nodes:**
-* compute-0-20 
-* compute-0-21 
-* compute-0-22 
-* compute-0-160 
-* compute-0-161 
-* compute-0-159 
-* compute-0-162 
-* compute-0-13 
-* compute-0-14 
-* compute-0-15 
-* compute-0-69 
-* compute-0-68 
-* compute-0-67 
-* compute-0-70 
-* compute-0-71
+* compute-0-20 		(7G RAM)
+* compute-0-21 		(7G RAM)
+* compute-0-22 		(7G RAM)
+* compute-0-160 	(125G RAM)
+* compute-0-161 	(125G RAM)
+* compute-0-159 	(125G RAM)
+* compute-0-162 	(125G RAM)
+* compute-0-13 		(15G RAM)
+* compute-0-14 		(7G RAM)
+* compute-0-15 		(31G RAM)
+* compute-0-69 		(31G RAM)
+* compute-0-68 		(31G RAM)
+* compute-0-67 		(31G RAM)
+* compute-0-70 		(31G RAM)
+* compute-0-71		(31G RAM)
 
 Overall, all the nodes have 172 cores. However, in some nodes, there is only 31GB, so when allocating each job 4GB, for example, then not all the cores could be utilized as the same time.
 
