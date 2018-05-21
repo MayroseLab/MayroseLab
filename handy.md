@@ -155,4 +155,8 @@ This option is not recommended because it "steals" CPUs from the queue without b
 * Use intel's compilers (icc for c and icpc for c++) instead of gcc and g++ (more effective). The icc and icpc equivalent to gcc > 6.0 are available in /powerapps/share/intel/parallel_studio_xe_2018/bin/ 
 * The default shell script language in power8 is bash, so in order to set environment vairables, use ```export <VAR_NAME>=<VAR_VALUE>``` (bash compatible) instead of ```setenv <VAR_NAME> <VAR_VALUE>``` (csh / tcsh compatible)
 
+**Useful PDB commands**
+* To delete all your jobs: qselect -u <username> | xargs qdel
+* To check which nodes your jobs are going to: qstat -1 -n | grep <username> (if usernae fails, try to trim it)
+
 
