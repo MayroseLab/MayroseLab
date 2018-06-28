@@ -151,6 +151,9 @@ This option is not recommended because it "steals" CPUs from the queue without b
 
 **To check which modules are available:** modules avail
 
+**To sync all your data from hyde to power (recommened by Dvori: use power5 instead of power8 to run the sync command): **
+rsync -avz --progress username@jekyl.tau.ac.il:/groups/itay_mayrose/username/ 
+
 **Tips from HPC team:**
 * Use intel's compilers (icc for c and icpc for c++) instead of gcc and g++ (more effective). The icc and icpc equivalent to gcc > 6.0 are available in /powerapps/share/intel/parallel_studio_xe_2018/bin/ 
 * The default shell script language in power8 is bash, so in order to set environment vairables, use ```export <VAR_NAME>=<VAR_VALUE>``` (bash compatible) instead of ```setenv <VAR_NAME> <VAR_VALUE>``` (csh / tcsh compatible)
