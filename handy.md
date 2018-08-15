@@ -149,6 +149,8 @@ This option is not recommended because it "steals" CPUs from the queue without b
 
 **Aliases:** Unoftunately, the basic queue commands (qstat, qdel, ect.) in power8 are built differently from the ones in Jekyl and Lecs. Thus, Shiran's lovely aliases for your .chrc file in Jekyl (which should correspond to the .bashrc file in power8) canot use most of them. Also, Haim's famous q.pl script must be copied from Jekyl to power8 in order to be able to use it (with the "q" command). I will update you as soon as I have a set of recommended aliases.
 
+By default, qstat will give you all jobs on all queues. To only view your jobs, you can use `qstat -u <username>`, or you can add the following alias to your `~/.bashrc` file: ``alias qstat="qstat -u `whoami`"``. Note that if you do that you will have to use `\qstat` whenever you want the original behavior (i.e. list jobs for all users).
+
 **To check which modules are available:** modules avail
 
 **To sync all your data from hyde to power (recommened by Dvori: use power5 instead of power8 to run the sync command):**
