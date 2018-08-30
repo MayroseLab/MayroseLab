@@ -47,7 +47,10 @@
 **Working with power8:**
 ------
 
-**Address:** power8.tau.ac.il
+
+**Address:** power8.tau.ac.il (this is the head node).
+* In order to reduce the load on the head node, we should connect to the login node instead of the head node:
+**Address:** username@powerlogin.tau.ac.il (The jobs should be submitted from here).
 
 **Our nodes:**
 * compute-0-20 		(7G RAM)
@@ -71,6 +74,12 @@ Overall, all the nodes have 172 cores. However, in some nodes, there is only 31G
 **Please note: users that at some point during they're studies had a user created for them under computer science directory must request Danny to change their defalut directory in power. The password must be reset as well.**
 
 **Syntax to submit a job:** qsub -q kerenh \<job_file_path\>
+
+**Some usefull commands:**
+* qstat -u username	Displays all the jobs of the user.
+* qstat -f jobid	Displays details of the job identified by the job id.
+* qstat -q		Shows details about the queues in power (number of running jobs and waiting jobs per each queue, memory, etc.)
+* qstat kerenh		Displays all the jobs submitted to the queue kerenh (or any other queue that is specified instead of kerenh).
 
 **Job syntax: bash. Example:**
 ```
