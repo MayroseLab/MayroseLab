@@ -49,7 +49,9 @@
 
 
 **Address:** power8.tau.ac.il (this is the head node).
-* In order to reduce the load on the head node, we should connect to the login node instead of the head node:
+
+In order to reduce the load on the head node, we should connect to the login node instead of the head node:
+
 **Address:** username@powerlogin.tau.ac.il (The jobs should be submitted from here).
 
 **Our nodes:**
