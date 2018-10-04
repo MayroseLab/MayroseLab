@@ -55,21 +55,21 @@ In order to reduce the load on the head node, we should connect to the login nod
 **Address:** username@powerlogin.tau.ac.il (The jobs should be submitted from here).
 
 **Our nodes:**
-* compute-0-20 		(7G RAM)
-* compute-0-21 		(7G RAM)
-* compute-0-22 		(7G RAM)
-* compute-0-160 	(125G RAM)
-* compute-0-161 	(125G RAM)
-* compute-0-159 	(125G RAM)
-* compute-0-162 	(125G RAM)
-* compute-0-13 		(15G RAM)
-* compute-0-14 		(7G RAM)
-* compute-0-15 		(31G RAM)
-* compute-0-69 		(31G RAM)
-* compute-0-68 		(31G RAM)
-* compute-0-67 		(31G RAM)
-* compute-0-70 		(31G RAM)
-* compute-0-71		(31G RAM)
+* compute-0-20 		(7G RAM, 2CPUs, 4 cores per CPU)
+* compute-0-21 		(7G RAM, 2CPUs, 4 cores per CPU)
+* compute-0-22 		(7G RAM, 2CPUs, 4 cores per CPU)
+* compute-0-159 	(125G RAM, 2CPUs, 8 cores per CPU)
+* compute-0-160 	(125G RAM, 2CPUs, 8 cores per CPU)
+* compute-0-161 	(125G RAM, 2CPUs, 8 cores per CPU)
+* compute-0-13 		(15G RAM, 2CPUs, 4 cores per CPU)
+* compute-0-14 		(7G RAM, 2CPUs, 4 cores per CPU)
+* compute-0-15 		(31G RAM, 2CPUs, 4 cores per CPU)
+* compute-0-67 		(31G RAM, 2CPUs, 6 cores per CPU)
+* compute-0-68 		(31G RAM, 2CPUs, 6 cores per CPU)
+* compute-0-69 		(31G RAM, 2CPUs, 6 cores per CPU)
+* compute-0-70 		(31G RAM, 2CPUs, 6 cores per CPU)
+* compute-0-71		(31G RAM, no longer accessible)
+* compute-0-162		(125G RAM, no longer accessible)
 
 Overall, all the nodes have 172 cores. However, in some nodes, there is only 31GB, so when allocating each job 4GB, for example, then not all the cores could be utilized as the same time.
 
