@@ -54,24 +54,18 @@ In order to reduce the load on the head node, we should connect to the login nod
 
 **Address:** username@powerlogin.tau.ac.il (The jobs should be submitted from here).
 
-**Our nodes:**
-* compute-0-20 		(7G RAM, 2CPUs, 4 cores per CPU)
-* compute-0-21 		(7G RAM, 2CPUs, 4 cores per CPU)
-* compute-0-22 		(7G RAM, 2CPUs, 4 cores per CPU)
-* compute-0-159 	(125G RAM, 2CPUs, 8 cores per CPU)
-* compute-0-160 	(125G RAM, 2CPUs, 8 cores per CPU)
-* compute-0-161 	(125G RAM, 2CPUs, 8 cores per CPU)
-* compute-0-13 		(15G RAM, 2CPUs, 4 cores per CPU)
-* compute-0-14 		(7G RAM, 2CPUs, 4 cores per CPU)
-* compute-0-15 		(31G RAM, 2CPUs, 4 cores per CPU)
-* compute-0-67 		(31G RAM, 2CPUs, 6 cores per CPU)
-* compute-0-68 		(31G RAM, 2CPUs, 6 cores per CPU)
-* compute-0-69 		(31G RAM, 2CPUs, 6 cores per CPU)
-* compute-0-70 		(31G RAM, 2CPUs, 6 cores per CPU)
-* compute-0-71		(31G RAM, no longer accessible)
-* compute-0-162		(125G RAM, no longer accessible)
+* display which nodes belong to the queue itaym: qmgr -c "p n @d" | grep -i itaym | awk '{print $3}'
+* display all nodes in the cluster: qmgr -c "p n @d"
+* filter based on server name: grep -i itaym
+* display only the nodes names: awk '{print $3}'
 
-Overall, all the nodes have 172 cores. However, in some nodes, there is only 31GB, so when allocating each job 4GB, for example, then not all the cores could be utilized as the same time.
+**Our nodes:** 
+* compute-0-246		(10 CPUs, 2 cores per CPU, 62GB)
+* compute-0-247 	(10 CPUs, 2 cores per CPU, 62GB)
+* compute-0-248 	(10 CPUs, 2 cores per CPU, 62GB)
+* compute-0-249 	(10 CPUs, 2 cores per CPU, 62GB)
+
+Overall, all the nodes have 80 cores.
 
 **Please note: users that at some point during they're studies had a user created for them under computer science directory must request Danny to change their defalut directory in power. The password must be reset as well.**
 
