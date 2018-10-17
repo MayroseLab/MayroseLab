@@ -11,7 +11,8 @@
 * To allow multi-threading using GPU: module load openmpi-x86_64
 
 **Cool script from Haim that shows the queues status and occupancy distribution among users:**
-* alias q 'perl /groups/pupko/haim/pupkoSVN/trunk/scripts/q.pl'
+* alias q='perl /groups/pupko/haim/pupkoSVN/trunk/scripts/q.pl'
+
 
 **Cool qstat aliases from Shiran:**
 * To see the full description your running jobs: alias qzstat 'qstat -s r -xml | tr '"'"'\n'"'"' '"'"' '"'"' | sed '"'"'s#<job_list[^>]*>#\n#g'"'"' | sed '"'"'s#<[^>]*>##g'"'"' | grep " " | column -t'
