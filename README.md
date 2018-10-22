@@ -169,7 +169,7 @@ rsync -avz --progress username@hyde.tau.ac.il:/groups/itay_mayrose/username/ /a/
 * The default shell script language in power8 is bash, so in order to set environment vairables, use ```export <VAR_NAME>=<VAR_VALUE>``` (bash compatible) instead of ```setenv <VAR_NAME> <VAR_VALUE>``` (csh / tcsh compatible)
 
 **Useful PDB commands**
-* To delete all your jobs: qselect -u <username> | xargs qdel
+* To delete all your jobs: ```qselect -u <username> | xargs qdel```
 * To check which nodes your jobs are going to: qstat -1 -n | grep <username> (if usernae fails, try to trim it)
 
 **Useful bash commands**
