@@ -63,12 +63,16 @@ In order to reduce the load on the head node, we should connect to the login nod
 * display only the nodes names: awk '{print $3}'
 
 **Our nodes:** 
-* compute-0-246		(10 CPUs, 2 cores per CPU, 62GB)
-* compute-0-247 	(10 CPUs, 2 cores per CPU, 62GB)
-* compute-0-248 	(10 CPUs, 2 cores per CPU, 62GB)
-* compute-0-249 	(10 CPUs, 2 cores per CPU, 62GB)
+* compute-0-246		(20 CPUs, 2 cores per CPU, 63GB)
+* compute-0-247 	(20 CPUs, 2 cores per CPU, 63GB)
+* compute-0-248 	(20 CPUs, 2 cores per CPU, 63GB)
+* compute-0-249 	(20 CPUs, 2 cores per CPU, 63GB)
+* compute-0-259		(20 CPUs, 2 cores per CPU, 63GB)
+* compute-0-260 	(20 CPUs, 2 cores per CPU, 63GB)
+* compute-0-261 	(20 CPUs, 2 cores per CPU, 63GB)
+* compute-0-262 	(20 CPUs, 2 cores per CPU, 63GB)
 
-Overall, all the nodes have 80 cores.
+Overall, all the nodes have 320 cores.
 
 **Please note: users that at some point during they're studies had a user created for them under computer science directory must request Danny to change their defalut directory in power. The password must be reset as well.**
 
