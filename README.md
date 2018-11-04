@@ -178,3 +178,9 @@ rsync -avz --progress username@hyde.tau.ac.il:/groups/itay_mayrose/username/ /a/
 
 **Useful bash commands**
 * To run a user interactive program in a single command while chaining multiple arguemnts, use: ```(printf "n\ny\n7\n" && cat) | some_tool```
+
+**View logs of finished jobs (only a week back)**
+1) login to power8.tau.ac.il
+2) cd /var/spool/pbs/server_logs/
+4) ls will present file with names corresponding to logs by date
+3) grep <job_id> <date_of_job_finish_time>
