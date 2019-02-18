@@ -78,7 +78,7 @@ In order to reduce the load on the head node, we should connect to the login nod
 
 Overall, all the nodes have 1472 cores.
 
-**Please note: users that at some point during they're studies had a user created for them under computer science directory must request Danny to change their defalut directory in power. The password must be reset as well.**
+**Please note: users that at some point during their studies had a user under computer science directory must ask Danny to change their defalut directory in power. The password must be reset as well.**
 
 **Syntax to submit a job:** qsub -q kerenh \<job_file_path\>
 
@@ -105,7 +105,7 @@ Overall, all the nodes have 1472 cores.
 ```
 Unfotunately, there is no way in PBS to name the log files of the job and also redirect them to a designated directory. So, currently you have two options:
 
-Either name the log files, but have them created in the directory from which the jobs where submitted. Do this by using:
+Either name the log files, but have them created in the directory from which the jobs were submitted. Do this by using:
 ```
 #PBS -e /scratch300/halabikeren/jobs_output/$JOB_NAME.$JOB_ID.ER
 #PBS -o /scratch300/halabikeren/jobs_output/$JOB_NAME.$JOB_ID.OU
