@@ -63,20 +63,33 @@ In order to reduce the load on the head node, we should connect to the login nod
 * display only the nodes names: awk '{print $3}'
 
 **Our nodes:** 
-* compute-0-246		(20 CPUs, 2 cores per CPU, 63GB)
-* compute-0-247 	(20 CPUs, 2 cores per CPU, 63GB)
-* compute-0-248 	(20 CPUs, 2 cores per CPU, 63GB)
-* compute-0-249 	(20 CPUs, 2 cores per CPU, 63GB)
-* compute-0-259		(20 CPUs, 2 cores per CPU, 63GB)
-* compute-0-260 	(20 CPUs, 2 cores per CPU, 63GB)
-* compute-0-261 	(20 CPUs, 2 cores per CPU, 63GB)
-* compute-0-262 	(20 CPUs, 2 cores per CPU, 63GB)
-* compute-0-269 	(24 CPUs, 12 cores per CPU, 63GB)
-* compute-0-270 	(24 CPUs, 12 cores per CPU, 63GB)
-* compute-0-271 	(24 CPUs, 12 cores per CPU, 63GB)
-* compute-0-272 	(24 CPUs, 12 cores per CPU, 63GB)
+* compute-0-246		(40 CPUs, 62GB)
+* compute-0-247 	(40 CPUs, 62GB)
+* compute-0-248 	(40 CPUs, 62GB)
+* compute-0-249 	(40 CPUs, 62GB)
+* compute-0-259		(40 CPUs, 62GB)
+* compute-0-260 	(40 CPUs, 62GB)
+* compute-0-261 	(40 CPUs, 62GB)
+* compute-0-262 	(40 CPUs, 62GB)
+* compute-0-269 	(24 CPUs, 54GB)
+* compute-0-270 	(24 CPUs, 62GB)
+* compute-0-271 	(24 CPUs, 62GB)
+* compute-0-272 	(24 CPUs, 62GB)
+* compute-0-273 	(48 CPUs, 125GB)
+* compute-0-274 	(48 CPUs, 125GB)
+* compute-0-275 	(48 CPUs, 125GB)
+* compute-0-276 	(48 CPUs, 125GB)
+* compute-0-277 	(48 CPUs, 125GB)
+* compute-0-278 	(16 CPUs, 125GB)
+* compute-0-279 	(16 CPUs, 125GB)
+* compute-0-280 	(16 CPUs, 125GB)
+* compute-0-281 	(16 CPUs, 125GB)
+* compute-0-282 	(40 CPUs, 62GB)
+* compute-0-283 	(40 CPUs, 62GB)
+* compute-0-284 	(40 CPUs, 62GB)
+* compute-0-285 	(40 CPUs, 62GB)
 
-Overall, all the nodes have 1472 cores.
+Overall, all the nodes have 880 CPUs and 2109 GB.
 
 **Please note: users that at some point during their studies had a user under computer science directory must ask Danny to change their defalut directory in power. The password must be reset as well.**
 
