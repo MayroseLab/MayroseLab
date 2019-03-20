@@ -156,6 +156,7 @@ This option is better, due to a number of reasons:
 * The session is considered, and thus, monitored by the PBS queue system, and you can limit the number of CPUs and memory that it can use ahead (with the ```-I``` argument).
 * Unlike the direct connection to a node, the session is not terminated when the connection is interrupted. This is ahuge advantage, because say you run a script that submits jobs in bulk, and then repeatedly check which are done - you no longer need to keep the connection alive to assure that the script finishes its task. If the connection to the cluster is interrupted (because you went home / went to class or any other reason), you can revive the screen of the session. This is done by simply executing the command ```screen``` as soon as the session begins and before interrupting the connection, execute ```ctrl +a```. Dvory also provided addional information on how to utilize this approach:
 
+
 Please see screen main useful commands below:
 * screen                                          # to create a screen in a machine
 * ctl +a, d                                       # to detach a screen – go out from a screen – but make it resumeable
@@ -175,6 +176,10 @@ The not recommended option (as we have done so far):
 ssh compute-0-20
 ```
 This option is not recommended because it "steals" CPUs from the queue without being monitored by its system.
+
+**Alter job settings after submission:**
+* Move job to another queue: qmove -q <queue_name> <job_id>
+* Alter resource of jobs: qalter -l select=1:ncpus=<cpus_num>:mem=<memory in gb>gb <job_id>
 
 **Aliases:** Unoftunately, the basic queue commands (qstat, qdel, ect.) in power8 are built differently from the ones in Jekyl and Lecs. Thus, Shiran's lovely aliases for your .chrc file in Jekyl (which should correspond to the .bashrc file in power8) canot use most of them. Also, Haim's famous q.pl script must be copied from Jekyl to power8 in order to be able to use it (with the "q" command). I will update you as soon as I have a set of recommended aliases.
 
