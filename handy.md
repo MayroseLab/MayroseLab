@@ -92,6 +92,8 @@ Overall, all the nodes have 80 cores.
 #PBS -l select=ncpus=1:mem=4gb 
 <commands>
 ```
+If you want to run the job on a specific node (for example on compute-0-276), you can specify #PBS -l nodes=compute-0-276,mem=4gb (instead of "#PBS -l select=ncpus=1:mem=4gb").
+
 Unfotunately, there is no way in PBS to name the log files of the job and also redirect them to a designated directory. So, currently you have two options:
 
 Either name the log files, but have them created in the directory from which the jobs where submitted. Do this by using:
