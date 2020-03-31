@@ -5,6 +5,7 @@ import argparse
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--keep_tmp', action="store_true", default=False, help="Do not delete tmp files at the end" )
+parser.add_argument('--queues_list', default='all', help="comma-separated list of queues to be displayed (all by default)")
 args = parser.parse_args()
 
 DEBUG_FLAG = 0
@@ -69,8 +70,11 @@ nodes_list = ['compute-0-246','compute-0-247','compute-0-248','compute-0-249','c
               'compute-0-273','compute-0-274','compute-0-275','compute-0-276','compute-0-277','compute-0-278',
               'compute-0-279','compute-0-281','compute-0-282','compute-0-283',
               'compute-0-285','compute-0-301','compute-0-302' ] #'compute-0-280','compute-0-284',
-queue_list = ['itaym','itaym1','itaym2','itaym3','lifesciweb','itaymaa','itaymr','itaym_anat','itaym_others',
-                'itay_25_1','itay_25_2','itay_25_3','itay_25_4']
+if args.queues_list == "all":
+    queue_list = ['itaym','itaym1','itaym2','itaym3','lifesciweb','itaymaa','itaymr','itaym_anat','itaym_others',
+                    'itay_25_1','itay_25_2','itay_25_3','itay_25_4']
+else:
+    queue_list = args.queues_list.split(',')
 
 #create qstat according to queue list:
 qstat_str = "qstat "
