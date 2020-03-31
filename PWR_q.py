@@ -1,8 +1,11 @@
 import os
-import sys
 import re
 import collections
+import argparse
 
+parser = argparse.ArgumentParser()
+parser.add_argument('--keep_tmp', action="store_true", default=False, help="Do not delete tmp files at the end" )
+args = parser.parse_args()
 
 DEBUG_FLAG = 0
 REM_FILES = 0
@@ -191,24 +194,7 @@ print("-------------------------------------------------------------------------
 print("Total CPUs used : %d out of %d" %(Total_CPUs,total_CPU))
 print("------------------------------------------------------------------------------")
 
-
-#cpu_dict = get_total_cpus(nodes_list)
-#print(cpu_dict)
-#sys.exit()
-#
-#for node_id in nodes_list:
-#    node_num = node_id.replace('compute-','')
-#    header+= str(node_num) + '\t'
-#print(header)
-#total=0
-#for user in user_nodes_dict.keys():
-#    data_line = ''
-#    user_str = "{:<18}".format(user)
-#    data_line += user_str
-#    count_items = collections.Counter(user_nodes_dict[user])
-#    for node_id in nodes_list:
-#        total+=count_items[node_id]
-#        data_line += str(count_items[node_id]) + ' \t '
-#    print(data_line)
-#print("------------------------------------------------------------------------------")
-#print("Total CPUs used : %d" %total)
+if not args.keep_tmp:
+    os.remove('log_status.txt')
+    os.remove('log_status_more.txt')
+    os.remove('CPU_data.txt')
