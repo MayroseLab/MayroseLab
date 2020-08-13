@@ -1,12 +1,8 @@
 import os
+import sys
 import re
 import collections
-import argparse
 
-parser = argparse.ArgumentParser()
-parser.add_argument('--keep_tmp', action="store_true", default=False, help="Do not delete tmp files at the end" )
-parser.add_argument('--queues_list', default='all', help="comma-separated list of queues to be displayed (all by default)")
-args = parser.parse_args()
 
 DEBUG_FLAG = 0
 REM_FILES = 0
@@ -65,16 +61,13 @@ def check_CPUs(line):
     return cpu_num_dict
 
 
-nodes_list = ['compute-0-246','compute-0-247','compute-0-248','compute-0-249','compute-0-259','compute-0-260',
-              'compute-0-261','compute-0-262','compute-0-269','compute-0-270','compute-0-271','compute-0-272',
-              'compute-0-273','compute-0-274','compute-0-275','compute-0-276','compute-0-277','compute-0-278',
-              'compute-0-279','compute-0-281','compute-0-282','compute-0-283',
-              'compute-0-285','compute-0-301','compute-0-302' ] #'compute-0-280','compute-0-284',
-if args.queues_list == "all":
-    queue_list = ['itaym','itaym1','itaym2','itaym3','lifesciweb','itaymaa','itaymr','itaym_anat','itaym_others',
-                    'itay_25_1','itay_25_2','itay_25_3','itay_25_4']
-else:
-    queue_list = args.queues_list.split(',')
+nodes_list = ['compute-0-285', 'compute-0-262', 'compute-0-281', 'compute-0-246', 'compute-0-278', 'compute-0-273', 
+              'compute-0-283', 'compute-0-302', 'compute-0-277', 'compute-0-276', 'compute-0-260', 'compute-0-259', 
+              'compute-0-247', 'compute-0-275', 'compute-0-269', 'compute-0-301', 'compute-0-249', 'compute-0-282', 
+              'compute-0-279', 'compute-0-274', 'compute-0-261', 'compute-0-270']
+
+queue_list = ['itaym','itaym1','itaym2','itaym3','lifesciweb','itaymaa','itaymr','itaym_anat','itaym_others',
+                'itay_25_1','itay_25_2','itay_25_3','itay_25_4']
 
 #create qstat according to queue list:
 qstat_str = "qstat "
@@ -198,7 +191,24 @@ print("-------------------------------------------------------------------------
 print("Total CPUs used : %d out of %d" %(Total_CPUs,total_CPU))
 print("------------------------------------------------------------------------------")
 
-if not args.keep_tmp:
-    os.remove('log_status.txt')
-    os.remove('log_status_more.txt')
-    os.remove('CPU_data.txt')
+
+#cpu_dict = get_total_cpus(nodes_list)
+#print(cpu_dict)
+#sys.exit()
+#
+#for node_id in nodes_list:
+#    node_num = node_id.replace('compute-','')
+#    header+= str(node_num) + '\t'
+#print(header)
+#total=0
+#for user in user_nodes_dict.keys():
+#    data_line = ''
+#    user_str = "{:<18}".format(user)
+#    data_line += user_str
+#    count_items = collections.Counter(user_nodes_dict[user])
+#    for node_id in nodes_list:
+#        total+=count_items[node_id]
+#        data_line += str(count_items[node_id]) + ' \t '
+#    print(data_line)
+#print("------------------------------------------------------------------------------")
+#print("Total CPUs used : %d" %total)
