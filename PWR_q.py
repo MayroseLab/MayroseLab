@@ -65,10 +65,9 @@ def check_CPUs(line):
     return cpu_num_dict
 
 
-nodes_list = ['compute-0-285', 'compute-0-262', 'compute-0-281', 'compute-0-246', 'compute-0-278', 'compute-0-273', 
-              'compute-0-283', 'compute-0-302', 'compute-0-277', 'compute-0-276', 'compute-0-260', 'compute-0-259', 
-              'compute-0-247', 'compute-0-275', 'compute-0-269', 'compute-0-301', 'compute-0-249', 'compute-0-282', 
-              'compute-0-279', 'compute-0-274', 'compute-0-261', 'compute-0-270']
+nodes_list = ['compute-0-249', 'compute-0-260', 'compute-0-275', 'compute-0-247', 'compute-0-301', 'compute-0-285', 'compute-0-302', 
+              'compute-0-246', 'compute-0-279', 'compute-0-277', 'compute-0-259', 'compute-0-281', 'compute-0-282', 'compute-0-274', 
+              'compute-0-276', 'compute-0-273', 'compute-0-283', 'compute-0-262', 'compute-0-261']
 if args.queues_list == "all":
     queue_list = ['itaym','itaym1','itaym2','itaym3','lifesciweb','itaymaa','itaymr','itaym_anat','itaym_others',
                     'itay_25_1','itay_25_2','itay_25_3','itay_25_4']
