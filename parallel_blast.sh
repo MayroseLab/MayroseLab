@@ -46,6 +46,6 @@ do
 done
 wait
 echo "Combining outputs from parallel BLAST runs..."
-cat "$tmp_path/*.blast" > $out_file
+cat $tmp_path/*.blast > $out_file
 
 rm -rf $tmp_path
