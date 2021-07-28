@@ -61,6 +61,7 @@ In order to reduce the load on the head node, we should connect to the login nod
 * display all nodes in the cluster: qmgr -c "p n @d"
 * filter based on server name: grep -i itaym
 * display only the nodes names: awk '{print $3}'
+* Check the health of each machine in queue itaym - `for node in $(qmgr -c "p n @d" | grep -i itaym | awk '{print $3}' | sort | uniq); do echo $node; ssh $node "echo OK"; done`
 
 **Our nodes - with assignments to queue:** 
 
