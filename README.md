@@ -35,17 +35,7 @@
 
 <br/><br/>
 	
-**Our nodes:**
-------
 
-**In Jekyl:**
-* compute-7-0 to 7-11  (64G RAM each)
-* compute-8-10 to 8-14 (129G RAM each)
-
-**In Lecs2:**
-* compute-4-20 to 4-29
-
-<br/><br/>
 
 **Working with power8:**
 ------
@@ -70,7 +60,7 @@ In order to reduce the load on the head node, we should connect to the login nod
 | compute-0-246 |  40  |    62    |   V   |         |        |        |    V   |    V   |            |
 | compute-0-247 |  40  |    62    |   V   |         |        |        |    V   |    V   |            |
 | compute-0-248 |  40  |    62    |       |         |        |        |        |        |      V     |
-| compute-0-249 |  40  |    62    |   V   |         |        |        |    V   |    V   |      V      |
+| compute-0-249 |  40  |    62    |   V   |         |        |        |    V   |    V   |      V     |
 | compute-0-259 |  40  |    62    |   V   |         |        |    V   |        |    V   |            |
 | compute-0-260 |  40  |    62    |   V   |         |        |    V   |        |    V   |            |
 | compute-0-261 |  40  |    62    |   V   |         |        |    V   |        |    V   |            |
