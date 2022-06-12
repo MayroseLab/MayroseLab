@@ -69,12 +69,12 @@ In order to reduce the load on the head node, we should connect to the login nod
 | compute-0-270 |  24  |    62    |   V   |         |    V   |        |        |    V   |            |
 | compute-0-271 |  24  |    62    |   V   |         |    V   |        |        |    V   |            |
 | compute-0-272 |  24  |    62    |   V   |         |    V   |        |        |    V   |            |
-| compute-0-273 |  48  |    125   |   V   |         |    V   |        |        |    V   |            |
+| compute-0-273 |  48  |    125   |   V   |   V     |    V   |        |        |    V   |            |
 | compute-0-274 |  48  |    125   |   V   |         |    V   |        |        |    V   |            |
 | compute-0-275 |  48  |    125   |   V   |         |    V   |        |        |    V   |            |
 | compute-0-276 |  48  |    125   |   V   |         |    V   |        |        |    V   |            |
 | compute-0-277 |  48  |    125   |   V   |         |    V   |        |        |    V   |            |
-| compute-0-278 |  16  |    125   |       |    V    |        |        |        |        |            |
+| compute-0-278 |  16  |    125   |       |         |        |        |        |        |            |
 | compute-0-279 |  16  |    125   |   V   |         |    V   |        |        |    V   |            |
 | compute-0-280 |  16  |    125   |   V   |         |    V   |        |        |    V   |            |
 | compute-0-281 |  16  |    125   |   V   |         |    V   |        |        |    V   |            |
