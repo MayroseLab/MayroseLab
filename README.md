@@ -53,7 +53,7 @@ In order to reduce the load on the head node, we should connect to the login nod
 * display only the nodes names: awk '{print $3}'
 * Check the health of each machine in queue itaym - `for node in $(qmgr -c "p n @d" | grep -i itaym | awk '{print $3}' | sort | uniq); do echo $node; ssh $node "echo OK"; done`
 
-**Our nodes - with assignments to queue:** <\br>
+**Our nodes - with assignments to queue:**  
 **Power8:**
 
 | Node          | CPUs | RAM (GB) | itaym | itaymaa | itay_25_1 | itay_25_2 | itay_25_3 | itay_25_4 | lifesciweb |
