@@ -55,35 +55,35 @@ In order to reduce the load on the head node, we should connect to the login nod
 
 **Our nodes - with assignments to queue:** 
 
-| Node          | CPUs | RAM (GB) | itaym | itaymaa | itaym1 | itaym2 | itaym3 | itaymr | lifesciweb |
-|---------------|------|----------|-------|---------|--------|--------|--------|--------|------------|
-| compute-0-246 |  40  |    62    |   V   |         |        |        |    V   |    V   |            |
-| compute-0-247 |  40  |    62    |   V   |         |        |        |    V   |    V   |            |
-| compute-0-248 |  40  |    62    |       |         |        |        |        |        |      V     |
-| compute-0-249 |  40  |    62    |   V   |         |        |        |    V   |    V   |      V     |
-| compute-0-259 |  40  |    62    |   V   |         |        |    V   |        |    V   |            |
-| compute-0-260 |  40  |    62    |   V   |         |        |    V   |        |    V   |            |
-| compute-0-261 |  40  |    62    |   V   |         |        |    V   |        |    V   |            |
-| compute-0-262 |  40  |    62    |   V   |         |        |    V   |        |    V   |            |
-| compute-0-269 |  24  |    54    |   V   |         |    V   |        |        |    V   |            |
-| compute-0-270 |  24  |    62    |   V   |         |    V   |        |        |    V   |            |
-| compute-0-271 |  24  |    62    |   V   |         |    V   |        |        |    V   |            |
-| compute-0-272 |  24  |    62    |   V   |         |    V   |        |        |    V   |            |
-| compute-0-273 |  48  |    125   |   V   |   V     |    V   |        |        |    V   |            |
-| compute-0-274 |  48  |    125   |   V   |         |    V   |        |        |    V   |            |
-| compute-0-275 |  48  |    125   |   V   |         |    V   |        |        |    V   |            |
-| compute-0-276 |  48  |    125   |   V   |         |    V   |        |        |    V   |            |
-| compute-0-277 |  48  |    125   |   V   |         |    V   |        |        |    V   |            |
-| compute-0-278 |  16  |    125   |       |         |        |        |        |        |            |
-| compute-0-279 |  16  |    125   |   V   |         |    V   |        |        |    V   |            |
-| compute-0-280 |  16  |    125   |   V   |         |    V   |        |        |    V   |            |
-| compute-0-281 |  16  |    125   |   V   |         |    V   |        |        |    V   |            |
-| compute-0-282 |  40  |    62    |   V   |         |    V   |        |        |    V   |            |
-| compute-0-283 |  40  |    62    |   V   |         |    V   |        |        |    V   |            |
-| compute-0-284 |  40  |    62    |   V   |         |    V   |        |        |    V   |            |
-| compute-0-285 |  40  |    62    |   V   |         |    V   |        |        |    V   |            |
-| compute-0-301 |  36  |    188   |   V   |         |        |        |        |    V   |            |
-| compute-0-302 |  36  |    188   |   V   |         |        |        |        |    V   |            |
+| Node          | CPUs | RAM (GB) | itaym | itaymaa | itay_25_1 | itaym2 | itaym3 | itaymr | lifesciweb |
+|---------------|------|----------|-------|---------|-----------|--------|--------|--------|------------|
+| compute-0-246 |  40  |    62    |   V   |         |           |        |    V   |    V   |            |
+| compute-0-247 |  40  |    62    |   V   |         |     V     |        |    V   |    V   |            |
+| compute-0-248 |  40  |    62    |       |         |           |        |        |        |      V     |
+| compute-0-249 |  40  |    62    |   V   |         |           |        |    V   |    V   |      V     |
+| compute-0-259 |  40  |    62    |   V   |         |           |    V   |        |    V   |            |
+| compute-0-260 |  40  |    62    |   V   |         |           |    V   |        |    V   |            |
+| compute-0-261 |  40  |    62    |   V   |         |           |    V   |        |    V   |            |
+| compute-0-262 |  40  |    62    |   V   |         |           |    V   |        |    V   |            |
+| compute-0-269 |  24  |    54    |   V   |         |           |        |        |    V   |            |
+| compute-0-270 |  24  |    62    |   V   |         |           |        |        |    V   |            |
+| compute-0-271 |  24  |    62    |   V   |         |           |        |        |    V   |            |
+| compute-0-272 |  24  |    62    |   V   |         |           |        |        |    V   |            |
+| compute-0-273 |  48  |    125   |   V   |   V     |     V     |        |        |    V   |            |
+| compute-0-274 |  48  |    125   |   V   |         |           |        |        |    V   |            |
+| compute-0-275 |  48  |    125   |   V   |         |           |        |        |    V   |            |
+| compute-0-276 |  48  |    125   |   V   |         |           |        |        |    V   |            |
+| compute-0-277 |  48  |    125   |   V   |         |           |        |        |    V   |            |
+| compute-0-278 |  16  |    125   |       |         |           |        |        |        |            |
+| compute-0-279 |  16  |    125   |   V   |         |           |        |        |    V   |            |
+| compute-0-280 |  16  |    125   |   V   |         |           |        |        |    V   |            |
+| compute-0-281 |  16  |    125   |   V   |         |           |        |        |    V   |            |
+| compute-0-282 |  40  |    62    |   V   |         |     V     |        |        |    V   |            |
+| compute-0-283 |  40  |    62    |   V   |         |           |        |        |    V   |            |
+| compute-0-284 |  40  |    62    |   V   |         |           |        |        |    V   |            |
+| compute-0-285 |  40  |    62    |   V   |         |           |        |        |    V   |            |
+| compute-0-301 |  36  |    188   |   V   |         |           |        |        |    V   |            |
+| compute-0-302 |  36  |    188   |   V   |         |     V     |        |        |    V   |            |
 
 Overall, all the nodes have 952 CPUs and 2485 GB RAM.
 
