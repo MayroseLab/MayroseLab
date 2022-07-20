@@ -78,7 +78,7 @@ In order to reduce the load on the head node, we should connect to the login nod
 | compute-0-302 |  36  |    188   |   V   |         |     V     |           |           |           |            |
 | compute-0-384 |  16  |    125   |   V   |         |           |           |           |     V     |            |
 
-Overall, all the nodes have 728  CPUs and 1476 GB RAM. <\br>
+Overall, all the nodes have 728  CPUs and 1476 GB RAM.  
 We also have itay_50_1 = itay_25_1&4, itay_50_2 = itay_25_2&3 and itay_75 = itay_25_2&3&4
 ---------------------------------------------------------------------------------------------------------------------	
 **Power9:**
