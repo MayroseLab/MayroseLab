@@ -72,7 +72,6 @@ In order to reduce the load on the head node, we should connect to the login nod
 | compute-0-277 |  48  |    125   |   V   |         |           |     V     |           |           |            |
 | compute-0-282 |  40  |    62    |   V   |         |     V     |           |           |           |            |
 | compute-0-283 |  40  |    62    |   V   |         |           |     V     |           |           |            |
-| compute-0-284 |  40  |    62    |   V   |         |           |           |           |           |            |
 | compute-0-285 |  40  |    62    |   V   |         |           |           |     V     |           |            |
 | compute-0-301 |  36  |    188   |   V   |         |           |           |           |     V     |            |
 | compute-0-302 |  36  |    188   |   V   |         |     V     |           |           |           |            |
