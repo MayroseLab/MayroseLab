@@ -54,39 +54,46 @@ In order to reduce the load on the head node, we should connect to the login nod
 * Check the health of each machine in queue itaym - `for node in $(qmgr -c "p n @d" | grep -i itaym | awk '{print $3}' | sort | uniq); do echo $node; ssh $node "echo OK"; done`
 
 **Our nodes - with assignments to queue:** 
+**Power8:
 
-| Node          | CPUs | RAM (GB) | itaym | itaymaa | itay_25_1 | itaym2 | itaym3 | itaymr | lifesciweb |
-|---------------|------|----------|-------|---------|-----------|--------|--------|--------|------------|
-| compute-0-246 |  40  |    62    |   V   |         |           |        |    V   |    V   |            |
-| compute-0-247 |  40  |    62    |   V   |         |     V     |        |    V   |    V   |            |
-| compute-0-248 |  40  |    62    |       |         |           |        |        |        |      V     |
-| compute-0-249 |  40  |    62    |   V   |         |           |        |    V   |    V   |      V     |
-| compute-0-259 |  40  |    62    |   V   |         |           |    V   |        |    V   |            |
-| compute-0-260 |  40  |    62    |   V   |         |           |    V   |        |    V   |            |
-| compute-0-261 |  40  |    62    |   V   |         |           |    V   |        |    V   |            |
-| compute-0-262 |  40  |    62    |   V   |         |           |    V   |        |    V   |            |
-| compute-0-269 |  24  |    54    |   V   |         |           |        |        |    V   |            |
-| compute-0-270 |  24  |    62    |   V   |         |           |        |        |    V   |            |
-| compute-0-271 |  24  |    62    |   V   |         |           |        |        |    V   |            |
-| compute-0-272 |  24  |    62    |   V   |         |           |        |        |    V   |            |
-| compute-0-273 |  48  |    125   |   V   |   V     |     V     |        |        |    V   |            |
-| compute-0-274 |  48  |    125   |   V   |         |           |        |        |    V   |            |
-| compute-0-275 |  48  |    125   |   V   |         |           |        |        |    V   |            |
-| compute-0-276 |  48  |    125   |   V   |         |           |        |        |    V   |            |
-| compute-0-277 |  48  |    125   |   V   |         |           |        |        |    V   |            |
-| compute-0-278 |  16  |    125   |       |         |           |        |        |        |            |
-| compute-0-279 |  16  |    125   |   V   |         |           |        |        |    V   |            |
-| compute-0-280 |  16  |    125   |   V   |         |           |        |        |    V   |            |
-| compute-0-281 |  16  |    125   |   V   |         |           |        |        |    V   |            |
-| compute-0-282 |  40  |    62    |   V   |         |     V     |        |        |    V   |            |
-| compute-0-283 |  40  |    62    |   V   |         |           |        |        |    V   |            |
-| compute-0-284 |  40  |    62    |   V   |         |           |        |        |    V   |            |
-| compute-0-285 |  40  |    62    |   V   |         |           |        |        |    V   |            |
-| compute-0-301 |  36  |    188   |   V   |         |           |        |        |    V   |            |
-| compute-0-302 |  36  |    188   |   V   |         |     V     |        |        |    V   |            |
+| Node          | CPUs | RAM (GB) | itaym | itaymaa | itay_25_1 | itay_25_2 | itay_25_3 | itay_25_4 | lifesciweb |
+|---------------|------|----------|-------|---------|-----------|-----------|-----------|-----------|------------|
+| compute-0-247 |  40  |    62    |   V   |         |     V     |           |           |           |            |
+| compute-0-248 |  40  |    62    |       |         |           |           |           |           |      V     |
+| compute-0-249 |  40  |    62    |   V   |         |           |     V     |           |           |      V     |
+| compute-0-259 |  40  |    62    |   V   |         |           |           |     V     |           |            |
+| compute-0-260 |  40  |    62    |   V   |         |           |           |     V     |           |            |
+| compute-0-261 |  40  |    62    |   V   |         |           |           |           |     V     |            |
+| compute-0-262 |  40  |    62    |   V   |         |           |           |           |     V     |            |
+| compute-0-273 |  48  |    125   |   V   |   V     |     V     |           |           |           |            |
+| compute-0-274 |  48  |    125   |   V   |         |           |           |           |     V     |            |
+| compute-0-275 |  48  |    125   |   V   |         |           |     V     |           |           |            |
+| compute-0-276 |  48  |    125   |   V   |         |           |           |     V     |           |            |
+| compute-0-277 |  48  |    125   |   V   |         |           |     V     |           |           |            |
+| compute-0-282 |  40  |    62    |   V   |         |     V     |           |           |           |            |
+| compute-0-283 |  40  |    62    |   V   |         |           |     V     |           |           |            |
+| compute-0-284 |  40  |    62    |   V   |         |           |           |           |           |            |
+| compute-0-285 |  40  |    62    |   V   |         |           |           |     V     |           |            |
+| compute-0-301 |  36  |    188   |   V   |         |           |           |           |     V     |            |
+| compute-0-302 |  36  |    188   |   V   |         |     V     |           |           |           |            |
+| compute-0-384 |  16  |    125   |   V   |         |           |           |           |     V     |            |
 
-Overall, all the nodes have 952 CPUs and 2485 GB RAM.
+Overall, all the nodes have 728  CPUs and 1476 GB RAM.
+---------------------------------------------------------------------------------------------------------------------	
+**Power9:
 
+| Node          | CPUs | RAM (GB) | itaym | 
+|---------------|------|----------|-------|
+| compute-0-284 |  40  |    65    |   V   |
+| compute-0-360 |  24  |    131   |   V   |
+| compute-0-362 |  24  |    131   |   V   |
+| compute-0-361 |  24  |    131   |   V   |
+| compute-0-386 |  16  |    131   |   V   |
+| compute-0-8   |  96  |    394   |   V   |
+| compute-0-9   |  96  |    790   |   V   |
+
+Overall, all the nodes have 320 CPUs and 1773  GB RAM.
+-----------------------------------------------------------------------------------------------------------------------
 **Please note: users that at some point during their studies had a user under computer science directory must ask Danny to change their defalut directory in power. The password must be reset as well.**
 
 **Syntax to submit a job:** qsub -q kerenh \<job_file_path\>
