@@ -58,14 +58,14 @@ In order to reduce the load on the head node, we should connect to the login nod
 
 | Node          | CPUs | RAM (GB) | itaym | itaymaa | itay_25_1 | itay_25_2 | itay_25_3 | itay_25_4 | lifesciweb |
 |---------------|------|----------|-------|---------|-----------|-----------|-----------|-----------|------------|
-| compute-0-247 |  40  |    62    |   V   |         |     V     |           |           |           |            |
+| compute-0-247 |  40  |    62    |   V   |         |           |           |           |           |            |
 | compute-0-248 |  40  |    62    |       |         |           |           |           |           |      V     |
 | compute-0-249 |  40  |    62    |   V   |         |           |     V     |           |           |      V     |
 | compute-0-259 |  40  |    62    |   V   |         |           |           |     V     |           |            |
 | compute-0-260 |  40  |    62    |   V   |         |           |           |     V     |           |            |
 | compute-0-261 |  40  |    62    |   V   |         |           |           |           |     V     |            |
 | compute-0-262 |  40  |    62    |   V   |         |           |           |           |     V     |            |
-| compute-0-273 |  48  |    125   |   V   |   V     |     V     |           |           |           |            |
+| compute-0-273 |  48  |    125   |   V   |   V     |           |           |           |           |            |
 | compute-0-274 |  48  |    125   |   V   |         |           |           |           |     V     |            |
 | compute-0-275 |  48  |    125   |   V   |         |           |     V     |           |           |            |
 | compute-0-276 |  48  |    125   |   V   |         |           |           |     V     |           |            |
