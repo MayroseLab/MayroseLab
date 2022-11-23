@@ -85,14 +85,14 @@ We also have itay_50_1 = itay_25_1&4, itay_50_2 = itay_25_2&3 and itay_75 = itay
 | Node          | CPUs | RAM (GB) | itaym | 
 |---------------|------|----------|-------|
 | compute-0-284 |  40  |    65    |   V   |
-| compute-0-360 |  24  |    131   |   V   |
 | compute-0-362 |  24  |    131   |   V   |
 | compute-0-361 |  24  |    131   |   V   |
 | compute-0-386 |  16  |    131   |   V   |
 | compute-0-8   |  96  |    394   |   V   |
 | compute-0-9   |  96  |    790   |   V   |
+| compute-0-190 | 256  |    1T    |   V   |
 
-Overall, all the nodes have 320 CPUs and 1773  GB RAM.
+Overall, all the nodes have 576 CPUs and 2773  GB RAM.
 -----------------------------------------------------------------------------------------------------------------------
 **Please note: users that at some point during their studies had a user under computer science directory must ask Danny to change their defalut directory in power. The password must be reset as well.**
 
