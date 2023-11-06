@@ -1,8 +1,9 @@
 # MayroseLab
-Welcome to the Mayrose Lab Cluster! This guide will help you get started with using our cluster 
-For any information about the cluster. here is an IT power guide- https://computing.tau.ac.il/pt_hpc_power
+Welcome to the Mayrose Lab Cluster! This guide will help you get started with using our cluster.
 
-First, make sure you have a user and appropriate permissions. If you don't have access yet, please get in touch with the HPC and IT team. 
+For any information about the cluster, here is an IT power guide- https://computing.tau.ac.il/pt_hpc_power
+
+As the first step, make sure you have a user and appropriate permissions. If you don't have access yet, please get in touch with the HPC and IT team. 
 
 **Connecting to the Cluster**
 ------
@@ -28,7 +29,7 @@ If you are off-campus, you might need to establish a VPN connection first as det
 
 *Interactive Sessions*
 ------
-In order to prevent overloading the primary node, we use interactive job sessions. To request such a session, follow these steps:
+In order to prevent overloading the primary node, we use interactive job sessions. To request such a session, use this command:
 ```
 qsub -I -X -q <queue> -N <interactive_job_name>
 ```
