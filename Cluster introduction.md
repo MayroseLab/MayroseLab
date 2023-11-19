@@ -23,7 +23,7 @@ We have two common clusters in the lab.
 
 power8 with the address: powerlogin.tau.ac.il
 
-power9 with the address: ***find the address***
+power9 with the address: power9login.tau.ac.il
 
 If you are off-campus, you might need to establish a VPN connection first as detailed in this guide - https://computing.tau.ac.il/helpdesk/remote-access/communication/vpn
 
