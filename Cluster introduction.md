@@ -47,7 +47,6 @@ To run jobs on the cluster, you'll need to submit batch job scripts. A simple ex
 #PBS -e <error file>
 #PBS -o <output file>
 #PBS -p 3
-#PBS -l nodes=compute-0-190:ppn=3,mem=2g
 
 #source ~/.bashrc
 hostname
