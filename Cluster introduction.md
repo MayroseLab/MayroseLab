@@ -63,5 +63,11 @@ Submit the job with:
 qsub your_script.sh
 ```
 
-
-
+You can check your job status by using the following command:
+```
+qstat -u <your user name>
+```
+Use the following command to kill your job:
+```
+qdel <job id> 
+```
