@@ -1,10 +1,8 @@
 
 Welcome to the Mayrose lab!
 
+**If you don't have TAU cluster user**
+please request one from the HPC and lifeguard personnel. Ask them to create a new user for you and ensure that your home directory is set to /groups/itay_mayrose within the lab directory. Additionally, make sure that both your .bashrc and .xauthority files are redirected to your new user's root.
 
-**If you don't have TAU cluster user** please open one by asking from HPC and lifegurde to open a new user.
-Ask to navigate your home directory under the lab directory (/groups/itay_mayrose). 
-Make sure that both your .bashrc and .xauthority files are also re-directed to your new user's root.
-
-**For all users** Ask for permetion to powerlogin and power9login, and to itay mayrose queues.
+**For all users** seek permission to access powerlogin, power9login, and the Itay Mayrose queues.
 
