@@ -72,3 +72,7 @@ Use the following command to kill your job:
 ```
 qdel <job id> 
 ```
+
+*Remote Connection with IDE*
+------
+A guid to use ssh interpeter with pycharm https://github.com/MayroseLab/MayroseLab/blob/master/Setting%20up%20remote%20interperter%20for%20Pycharm.pdf
