@@ -1,6 +1,6 @@
-You are more then welcome to copy the following commands into you ./bashrc file to create the following shortcats commands:
+You are more then welcome to copy the following commands into your ~/.bashrc file to create the following shortcats commands:
 
-To open interactive job:
+To open interactive job, Don't forget to change <YOUR_NAME> to a name for your interactive job:
 ```
 alias int_job="qsub -I -X -q itaymaa -N <YOUR_NAME>_interactive"
 alias int_job9="qsub -I -X -q itaym -N <YOUR_NAME>_interactive"
