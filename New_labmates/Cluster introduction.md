@@ -1,14 +1,14 @@
 # MayroseLab
 Welcome to the Mayrose Lab Cluster! This guide will help you get started with using our cluster.
 
-For any information about the cluster, here is an IT power guide- https://computing.tau.ac.il/pt_hpc_power
+For any information about the cluster, here is an IT power guide- [https://computing.tau.ac.il/pt_hpc_power](https://hpcguide.tau.ac.il/index.php?title=Main_Page)
 
 As the first step, make sure you have a user and appropriate permissions. If you don't have access yet, please get in touch with the HPC and IT team. 
 
 **Connecting to the Cluster**
 ------
-We usually recommend using mobaXterm as a Linux terminal.
-You can download it here - https://mobaxterm.mobatek.net/download.html
+We usually recommend using mobaXterm as a Linux terminal and VS or pycharm to write progrems and debug
+You can download mobaXterm here - https://mobaxterm.mobatek.net/download.html
 
 
 **SSH Access**
@@ -19,11 +19,7 @@ ssh your_username@cluster_address
 ```
 If you use mobaXtream: use this guide to define a session - ***need to add guide*** 
 
-We have two common clusters in the lab. 
-
-power8 with the address: powerlogin.tau.ac.il
-
-power9 with the address: power9login.tau.ac.il
+The cluster address: powerslurm-login.tau.ac.il
 
 If you are off-campus, you might need to establish a VPN connection first as detailed in this guide - https://computing.tau.ac.il/helpdesk/remote-access/communication/vpn
 
@@ -31,7 +27,12 @@ If you are off-campus, you might need to establish a VPN connection first as det
 ------
 In order to prevent overloading the primary node, we use interactive job sessions. To request such a session, use this command:
 ```
-qsub -I -X -q <queue> -N <interactive_job_name>
+srun --ntasks=56 -p power-general -A power-general-users --pty bash
+```
+
+Or to use a scesific machine:
+```
+srun --ntasks=56 -p power-general -A power-general-users --nodelist="compute-0-12" --pty bash
 ```
 
 *Job Submission*
@@ -39,38 +40,34 @@ qsub -I -X -q <queue> -N <interactive_job_name>
 To run jobs on the cluster, you'll need to submit batch job scripts. A simple example:
 ```
 #!/bin/bash
-#PBS -S /bin/bash
-#PBS -N <job name>
-#PBS -r y
-#PBS -q itaym
-#PBS -V
-#PBS -e <error file>
-#PBS -o <output file>
-#PBS -p 3
-#PBS -l select=1:ncpus=4
 
-#source ~/.bashrc
-hostname
-#conda activate
-#export PATH=$CONDA_PREFIX/bin:$PATH
+#SBATCH --job-name=my_job             # Job name
+#SBATCH --account=my_account          # Account name for billing
+#SBATCH --partition=long              # Partition name
+#SBATCH --time=02:00:00               # Time allotted for the job (hh:mm:ss)
+#SBATCH --ntasks=4                    # Number of tasks (processes)
+#SBATCH --cpus-per-task=1             # Number of CPU cores per task
+#SBATCH --gres=gpu:NUMBER_OF_GPUS     # number of GPU's to use in the job
+#SBATCH --mem-per-cpu=4G              # Memory per CPU core
+#SBATCH --output=my_job_%j.out        # Standard output and error log (%j expands to jobId)
+#SBATCH --error=my_job_%j.err         # Separate file for standard error
 
-cd ~/<script directory> 
+# your commans here
 
-Your commands here >myout 2>myerr
 ```
 
 Submit the job with:
 ```
-qsub your_script.sh
+sbatch your_script.sh
 ```
 
 You can check your job status by using the following command:
 ```
-qstat -u <your user name>
+squeue -u <your user name>
 ```
 Use the following command to kill your job:
 ```
-qdel <job id> 
+scancel <job id> 
 ```
 
 *Remote Connection with IDE*
