@@ -7,7 +7,8 @@ As the first step, make sure you have a user and appropriate permissions. If you
 
 **Connecting to the Cluster**
 ------
-We usually recommend using mobaXterm as a Linux terminal and VS or pycharm to write progrems and debug
+We usually recommend using mobaXterm as a Linux terminal and VS or PyCharm to write progrems and debug
+
 You can download mobaXterm here - https://mobaxterm.mobatek.net/download.html
 
 
@@ -30,7 +31,7 @@ In order to prevent overloading the primary node, we use interactive job session
 srun --ntasks=56 -p power-general -A power-general-users --pty bash
 ```
 
-Or to use a scesific machine:
+Or to use a specific machine:
 ```
 srun --ntasks=56 -p power-general -A power-general-users --nodelist="compute-0-12" --pty bash
 ```
