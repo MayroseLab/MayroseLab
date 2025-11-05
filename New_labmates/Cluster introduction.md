@@ -44,7 +44,7 @@ To run jobs on the cluster, you'll need to submit batch job scripts. A simple ex
 
 #SBATCH --job-name=my_job             # Job name
 #SBATCH --account=my_account          # Account name for billing
-#SBATCH --partition=long              # Partition name
+#SBATCH --partition=itaym-pool        # Partition name
 #SBATCH --time=02:00:00               # Time allotted for the job (hh:mm:ss)
 #SBATCH --ntasks=4                    # Number of tasks (processes)
 #SBATCH --cpus-per-task=1             # Number of CPU cores per task
