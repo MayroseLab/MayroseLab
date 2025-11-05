@@ -28,12 +28,12 @@ If you are off-campus, you might need to establish a VPN connection first as det
 ------
 In order to prevent overloading the primary node, we use interactive job sessions. To request such a session, use this command:
 ```
-srun --ntasks=56 -p power-general -A power-general-users --pty bash
+srun --ntasks=56 -p power-general-pool -A power-general-users --pty bash
 ```
 
 Or to use a specific machine:
 ```
-srun --ntasks=56 -p power-general -A power-general-users --nodelist="compute-0-12" --pty bash
+srun --ntasks=56 -p power-general-pool -A power-general-users --nodelist="compute-0-12" --pty bash
 ```
 
 *Job Submission*
